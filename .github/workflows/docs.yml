@@ -1,4 +1,4 @@
-name: autobuild
+name: build
 on:
   push:
     branches: [main]
@@ -6,7 +6,7 @@ on:
     branches: [main]
 
 jobs:
-  autobuild:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -38,7 +38,10 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v3
         with:
           build_dir: dist
+          # 目标仓库
           repo: async-codeper/web
+          # 目标仓库分支
           target_branch: main
         env:
+          # docs仓库下 setting -> secrets and variables -> actions -> new repository secrets -> key: ACCESS_TOKEN
           GH_PAT: ${{ secrets.ACCESS_TOKEN }}
