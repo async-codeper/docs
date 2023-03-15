@@ -1,4 +1,4 @@
-name: build
+name: autobuild
 on:
   push:
     branches: [main]
@@ -6,7 +6,7 @@ on:
     branches: [main]
 
 jobs:
-  build:
+  autobuild:
     runs-on: ubuntu-latest
 
     steps:
@@ -35,7 +35,7 @@ jobs:
         run: pnpm build
 
       - name: Publish
-        uses: crazy-max/ghaction-github-pages@v2
+        uses: crazy-max/ghaction-github-pages@v3
         env:
           REPO: https://github.com/async-codeper/web.git
           BRANCH: main
