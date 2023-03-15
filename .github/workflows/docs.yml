@@ -38,7 +38,7 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v3
         with:
           build_dir: dist
-          REPO: async-codeper/async-codeper.github.io
-          BRANCH: main
+          repo: async-codeper/web
+          target_branch: main
         env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          GH_PAT: ${{ secrets.ACCESS_TOKEN }}
