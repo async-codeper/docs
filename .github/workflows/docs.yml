@@ -36,7 +36,9 @@ jobs:
 
       - name: Publish
         uses: crazy-max/ghaction-github-pages@v3
+        with:
+          build_dir: dist
         env:
           REPO: https://github.com/async-codeper/web.git
           BRANCH: main
-          FOLDER: dist
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
