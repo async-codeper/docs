@@ -872,13 +872,13 @@ type DebuggerEvent = {
 ```
 
 ### onActivated
-组件实例是 <KeepAlive> 缓存树的一部分，当组件被插入到 DOM 中时调用
+组件实例是 `KeepAlive` 缓存树的一部分，当组件被插入到 DOM 中时调用
 ``` ts
 function onActivated(callback: () => void): void
 ```
 
 ### onDeactivated
-组件实例是 <KeepAlive> 缓存树的一部分，当组件从 DOM 中被移除时调用
+组件实例是 `KeepAlive` 缓存树的一部分，当组件从 DOM 中被移除时调用
 ``` ts
 function onDeactivated(callback: () => void): void
 ```
