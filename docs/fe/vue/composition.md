@@ -705,7 +705,8 @@ console.log(isReactive(bar.foo)) // false
 function effectScope(detached?: boolean): EffectScope
 
 interface EffectScope {
-    run<T>(fn: () => T): T | undefined // 如果作用域不活跃就为 undefined
+    // 如果作用域不活跃就为 undefined
+    run<T>(fn: () => T): T | undefined
     stop(): void
 }
 ```
