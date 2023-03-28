@@ -21,7 +21,12 @@ export const navbar: NavbarConfig = [
             },
             {
                 text: 'Typescript',
-                children: []
+                children: [
+                    { text: 'ts入门', link: '/fe/ts/base' },
+                    { text: '泛型函数', link: '/fe/ts/senior' },
+                    { text: '声明文件', link: '/fe/ts/declare' },
+                    { text: '编译配置', link: '/fe/ts/config' }
+                ]
             },
             {
                 text: 'XHR',
