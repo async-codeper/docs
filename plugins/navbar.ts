@@ -57,7 +57,9 @@ export const navbar: NavbarConfig = [
             },
             {
                 text: 'Regexp',
-                children: []
+                children: [
+                    { text: '正则全部', link: '/fe/regexp' }
+                ]
             },
             {
                 text: 'Canvas',
